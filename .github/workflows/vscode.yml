@@ -38,7 +38,7 @@ jobs:
         curl -LO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip
         unzip ngrok-stable-linux-386.zip
         ./ngrok authtoken ${NGROK_TOKEN}
-        ./ngrok http 8779
+        timeout 10m ./ngrok http 8779
       env:
         CI: true
         NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
