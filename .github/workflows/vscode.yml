@@ -24,7 +24,7 @@ jobs:
 
 
     - name: Run a one-line script
-      run: ./install.sh
+      run: ./install_code.sh
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
