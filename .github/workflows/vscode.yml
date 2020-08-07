@@ -38,7 +38,7 @@ jobs:
         unzip ngrok-stable-linux-386.zip
         ./ngrok authtoken ${NGROK_TOKEN}
         ./ngrok http 8779
-       env:
+      env:
         CI: true
         NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
 
