@@ -1,0 +1,13 @@
+[Unit]
+Description=code-server
+
+
+[Service]
+User=mchirico
+Group=mchirico
+Type=simple
+ExecStart=/home/mchirico/code-server-3.4.1-linux-x86_64/bin/code-server --bind-addr 127.0.0.1:8772 --user-data-dir /home/mchirico --config /home/mchirico/.config/code-server/config.yaml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

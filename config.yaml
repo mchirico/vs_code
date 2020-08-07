@@ -1,0 +1,4 @@
+bind-addr: 127.0.0.1:8772
+auth: password
+password: somePA$$wordChangeMe
+cert: false
